@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tumaini Chess Academy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://res.cloudinary.com/dfmpym7ed/image/upload/v1757699848/Gemini_Generated_Image_i8gegri8gegri8ge_sv510r.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #111;
+    line-height: 1.6;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(10,10,22,0.4);
+    z-index: -1;
+  }
+  .header-main {
+    /* No purple overlay, just a decorative gradient background for the header */
+    background: linear-gradient(135deg, #4a90e2cc, #9013fecc);
+    color: white;
+    padding: 2.5rem 2rem 1.2rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 0 0 30px 30px;
+  }
+  .header-title {
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    letter-spacing: 3px;
+    text-shadow:
+      0 0 12px #d9a4ff,
+      0 0 24px #e8beff,
+      0 0 36px #9013fe;
+    user-select: none;
+  }
+  .logo {
+    height: 100px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #9013fecc;
+    margin-bottom: 1.5rem;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+  section {
+    background: white;
+    margin-bottom: 2.5rem;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(144, 19, 254, 0.16);
+    color: #222;
+  }
+  h2 {
+    font-weight: 700;
+    color: #6a39c7;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #9013fe;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+  p, li {
+    max-width: 700px;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  ul {
+    padding-left: 1.6rem;
+    max-width: 700px;
+  }
+  .charity-items, .coaches-list, .gallery-grid, .players-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .charity-box, .coach-card, .gallery-item, .player-card {
+    flex: 1 1 280px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(180, 141, 236, 0.20);
+    padding: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .charity-box h3, .coach-card h3, .player-card h3 {
+    color: #7d56ff;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .player-photo, .coach-photo, .founder-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 18px rgba(144, 19, 254, 0.22);
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  .founder-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  .founder-info {
+    flex: 1;
+  }
+  .gallery-grid {
+    gap: 1rem;
+  }
+  .gallery-grid img {
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(144,19,254,0.08);
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+  @media (max-width: 600px) {
+    .header-title {
+      font-size: 2rem;
+      letter-spacing: 1.2px;
+      margin-bottom: 1rem;
+    }
+    .founder-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .charity-items, .coaches-list, .gallery-grid, .players-list {
+      flex-direction: column;
+    }
+    .player-photo, .coach-photo, .founder-photo, .gallery-grid img {
+      max-width: 100%;
+      width: 100%;
+      flex: none;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="header-main">
+  <h1 class="header-title">Tumaini Chess Academy</h1>
+  <img class="logo" src="https://res.cloudinary.com/db8hvm0al/image/upload/v1759175432/CoEditor_VID_20250912_195149_mojwmq.jpg" alt="Tumaini Chess Academy Logo" />
+</div>
+<main>
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>Mission:</strong> To nurture and develop young chess talents through expert coaching, community engagement, and promoting chess as a tool for education and character building in schools and homes.</p>
+    <p><strong>Vision:</strong> To be the leading chess academy in Kenya fostering future champions, promoting discipline and strategic thinking through inclusive and accessible chess programs for all children.</p>
+    <div class="founder-section">
+      <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1757775338/Screenshot_20250913-175351_2_tws61g.jpg" alt="Coach James Muchiri" class="founder-photo" />
+      <div class="founder-info">
+        <h3>Coach James Muchiri</h3>
+        <p>Founder of Tumaini Chess Academy, experienced player and certified FIDE Arbiter. Coach James is passionate about developing future chess champions through inspiration and expert guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2>Programs & Services</h2>
+    <p>We offer a variety of chess programs including:</p>
+    <ul>
+      <li><strong>Home Coaching:</strong> Personalized chess coaching sessions conducted at your home for effective learning.</li>
+      <li><strong>Chess in Schools:</strong> Integration of chess training in school programs to foster young talents.</li>
+      <li><strong>Holiday Chess Camps & Weekend Group Sessions:</strong> Engaging chess camps and group activities during school holidays and weekends suitable for all junior levels.</li>
+    </ul>
+  </section>
+
+  <section id="tournaments">
+    <h2>Upcoming Tournaments</h2>
+    <p>Upcoming tournaments will be posted here.</p>
+  </section>
+
+  <section id="charity">
+    <h2>Charitable Works</h2>
+    <div class="charity-items">
+      <div class="charity-box">
+        <h3>Food Donations</h3>
+        <p>We actively engage in food distribution drives to support underprivileged children and families within our community.</p>
+      </div>
+      <div class="charity-box">
+        <h3>Clothing Donations</h3>
+        <p>Providing clothing essentials to those in need to ensure every child has the dignity and confidence to participate and learn.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="best-players">
+    <h2>Best Players</h2>
+    <div class="players-list">
+      <div class="player-card">
+        <img class="player-photo" src="https://res.cloudinary.com/db8hvm0al/image/upload/v1759173943/IMG-20250929-WA0190_ijofxw.jpg" alt="Myles Kemboi" />
+        <h3>Myles Kemboi</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="coaches">
+    <h2>Our Coaches</h2>
+    <div class="coaches-list">
+      <div class="coach-card">
+        <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1757775338/Screenshot_20250913-175351_2_tws61g.jpg" alt="Coach James Muchiri" class="coach-photo" />
+        <h3>Coach James Muchiri</h3>
+        <p>Founder and FIDE Arbiter. Experienced player and mentor to young talents.</p>
+      </div>
+      <div class="coach-card">
+        <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1759174377/Screenshot_20250929-223219_2_hpagsp.jpg" alt="Coach Charles" class="coach-photo" />
+        <h3>Coach Charles</h3>
+        <p>Dedicated chess coach with focus on strategic development for juniors.</p>
+      </div>
+      <div class="coach-card">
+        <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1759174956/Screenshot_20250929-223820_2_og0yq3.jpg" alt="Coach Ben" class="coach-photo" />
+        <h3>Coach Ben</h3>
+        <p>Experienced mentor specializing in advanced chess tactics and team coaching.</p>
+      </div>
+      <div class="coach-card">
+        <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1757773817/IMG-20250913-WA0080_yf1ykv.jpg" alt="Coach Glendah" class="coach-photo" />
+        <h3>Coach Glendah</h3>
+        <p>Committed coach focused on nurturing chess skills for juniors and adults alike.</p>
+      </div>
+      <div class="coach-card">
+        <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1759175151/Screenshot_20250929-224516_2_wqj8m0.jpg" alt="Coach Moses" class="coach-photo" />
+        <h3>Coach Moses</h3>
+        <p>Passionate chess trainer dedicated to fostering junior talent development.</p>
+      </div>
+      <div class="coach-card">
+        <img src="https://res.cloudinary.com/db8hvm0al/image/upload/v1757775388/IMG-20250913-WA0074_ckygyf.jpg" alt="Coach Zawadi" class="coach-photo" />
+        <h3>Coach Zawadi</h3>
+        <p>Dedicated coach specializing in junior chess development and training.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300x200?text=Chess+Event+1" alt="Chess Event 1" />
+      <img src="https://via.placeholder.com/300x200?text=Chess+Event+2" alt="Chess Event 2" />
+      <img src="https://via.placeholder.com/300x200?text=Chess+Camp" alt="Chess Camp" />
+      <img src="https://via.placeholder.com/300x200?text=Weekend+Session" alt="Weekend Session" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Call/WhatsApp: 
+      <a href="tel:+254727806105" style="color:#6a39c7;">+254 727 806105</a>
+    </p>
+    <p>
+      Email:
+      <a href="mailto:tumainichessclub@gmail.com" style="color:#6a39c7;">tumainichessclub@gmail.com</a> | 
+      <a href="mailto:tumainichessacademy@gmail.com" style="color:#6a39c7;">tumainichessacademy@gmail.com</a>
+    </p>
+    <p>Follow us on social media for updates and news.</p>
+  </section>
+</main>
+<footer>
+  &copy; 2025 Tumaini Chess Academy. All rights reserved.
+</footer>
+</body>
+</html>
