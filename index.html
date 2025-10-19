@@ -23,7 +23,6 @@
     z-index: -1;
   }
   .header-main {
-    /* No purple overlay, just a decorative gradient background for the header */
     background: linear-gradient(135deg, #4a90e2cc, #9013fecc);
     color: white;
     padding: 2.5rem 2rem 1.2rem 2rem;
@@ -42,11 +41,21 @@
       0 0 36px #9013fe;
     user-select: none;
   }
+  .logo-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #9013fecc;
+    transition: transform 0.3s ease;
+  }
+  .logo-link:hover {
+    transform: scale(1.05);
+  }
   .logo {
     height: 100px;
     border-radius: 12px;
-    box-shadow: 0 0 15px #9013fecc;
-    margin-bottom: 1.5rem;
+    display: block;
+    width: auto;
   }
   main {
     max-width: 960px;
@@ -149,7 +158,9 @@
 <body>
 <div class="header-main">
   <h1 class="header-title">Tumaini Chess Academy</h1>
-  <img class="logo" src="https://res.cloudinary.com/db8hvm0al/image/upload/v1759175432/CoEditor_VID_20250912_195149_mojwmq.jpg" alt="Tumaini Chess Academy Logo" />
+  <a class="logo-link" href="/">
+    <img class="logo" src="https://res.cloudinary.com/dfmpym7ed/image/upload/v1757696113/CoEditor_VID_20250912_195149_xlcqeb.jpg" alt="Tumaini Chess Academy Logo" />
+  </a>
 </div>
 <main>
   <section id="about">
